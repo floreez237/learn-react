@@ -5,6 +5,6 @@ import {BrowserRouter} from "react-router-dom";
 
 export default function App () {
     return <React.StrictMode>
-        <BrowserRouter><TodoContainer/></BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}><TodoContainer/></BrowserRouter>
     </React.StrictMode>
 }
